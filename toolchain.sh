@@ -1,5 +1,5 @@
 #!/bin/sh
-# toolchain.sh by Naomi Peori (naomi@peori.ca)
+# toolchain.sh by Naomi Peori (naomi@peori.ca) modified by Gustavo Carvalho (gc5142387@gmail.com)
 
 ## Enter the ps3toolchain directory.
 cd "`dirname $0`" || { echo "ERROR: Could not enter the ps3toolchain directory."; exit 1; }
@@ -20,7 +20,7 @@ for SCRIPT in $DEPEND_SCRIPTS; do "$SCRIPT" || { echo "$SCRIPT: Failed."; exit 1
 BUILD_SCRIPTS=`ls ../scripts/*.sh | sort`
 
 ## If specific steps were requested...
-if [ $1 ]; then
+if [ $2 ]; then
 
   ## Find the requested build scripts.
   REQUESTS=""

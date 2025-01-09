@@ -1,8 +1,8 @@
 #!/bin/sh -e
-# psl1ght.sh by Naomi Peori (naomi@peori.ca)
+# psl1ght.sh by Naomi Peori (naomi@peori.ca) modified by Gustavo Carvalho (gc5142387@gmail.com)
 
 ## Download the source code.
-wget --no-check-certificate https://github.com/ps3dev/PSL1GHT/tarball/master -O psl1ght.tar.gz
+wget --no-check-certificate https://github.com/gusteivos/PSL1GHT/tarball/master -O psl1ght.tar.gz
 
 ## Unpack the source code.
 rm -Rf psl1ght && mkdir psl1ght && tar --strip-components=1 --directory=psl1ght -xvzf psl1ght.tar.gz
